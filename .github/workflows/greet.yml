@@ -6,8 +6,8 @@ on:
 
 jobs:
   greet:
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'dev'
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "🎉 PR merged into dev! Congrats!"
+        run: echo "🎉 PR merged into main! Congrats!"
